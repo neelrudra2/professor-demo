@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/jpg" href="assets/images/favicon.png" />
+    <title>Dr. Kamalesh Debnath - Gallery</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <style>
+      .gallery-img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+      }
+      .gallery-img:hover {
+        transform: scale(1.05);
+      }
+      .gallery-title {
+        font-weight: bold;
+        font-size: 24px;
+        margin: 30px 0 15px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img
+      class="lightbox-content"
+      id="lightbox-img"
+      alt="Gallery lightbox image"
+      title="Gallery lightbox image"
+    />
+  </div>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+      <div class="container">
+        <a class="fa-solid fa-house brand-home-icon navbar-brand" href="index.html"></a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+          aria-label="Toggle navigation"
+          title="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Toggle navigation</span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+            <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
+            <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
+
+            <!-- More dropdown for less-critical links -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle d-flex align-items-center"
+                href="#"
+                id="moreDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                More <i class="fa-solid fa-angle-down ms-1"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="moreDropdown">
+                <li>
+                  <a class="dropdown-item" href="ptnt.html"
+                    ><i class="fa-solid fa-certificate me-2"></i>Patents</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="research-facility.html"
+                    ><i class="fa-solid fa-microscope me-2"></i>Research Facility</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="projects.html"
+                    ><i class="fa-solid fa-microscope me-2"></i>Projects</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="students.html"
+                    ><i class="fa-solid fa-user-friends me-2"></i>UG/PG Students</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="phd.html"
+                    ><i class="fa-solid fa-user-graduate me-2"></i>PhD Students</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="gallery.html"
+                    ><i class="fa-solid fa-image me-2"></i>Gallery</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="notes.html"
+                    ><i class="fa-solid fa-book-open me-2"></i>Course Notes</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <!-- Keep contact accessible -->
+            <li class="nav-item ms-lg-2">
+              <a class="nav-link" href="contact.html"><i aria-hidden="true"></i>Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Banner -->
+    <div class="page-banner text-center py-5" style="background: #063970; color: white">
+      <h1>Gallery</h1>
+      <p>Photographs from academic events, research activities and institutional engagements</p>
+    </div>
+
+    <div class="container mt-4">
+      <!-- Conference Photos -->
+      <h3 class="gallery-title">Conferences</h3>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <img
+            src="assets/images/gallery/conf1.jpg"
+            class="gallery-img"
+            alt="Conference photo 1"
+            title="Conference photo 1"
+          />
+        </div>
+        <div class="col-md-4">
+          <img
+            src="assets/images/gallery/conf2.jpg"
+            class="gallery-img"
+            alt="Conference photo 2"
+            title="Conference photo 2"
+          />
+        </div>
+        <div class="col-md-4">
+          <img
+            src="assets/images/gallery/conf3.jpg"
+            class="gallery-img"
+            alt="Conference photo 3"
+            title="Conference photo 3"
+          />
+        </div>
+      </div>
+
+      <!-- Classes -->
+      <h3 class="gallery-title">Classroom & Teaching</h3>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <img
+            src="assets/images/gallery/class1.jpg"
+            class="gallery-img"
+            alt="Teaching session 1"
+            title="Teaching session 1"
+          />
+        </div>
+        <div class="col-md-4">
+          <img
+            src="assets/images/gallery/class2.jpg"
+            class="gallery-img"
+            alt="Teaching session 2"
+            title="Teaching session 2"
+          />
+        </div>
+        <div class="col-md-4">
+          <img
+            src="assets/images/gallery/class3.jpg"
+            class="gallery-img"
+            alt="Teaching session 3"
+            title="Teaching session 3"
+          />
+        </div>
+      </div>
+
+      <!-- Workshops -->
+      <h3 class="gallery-title">Workshops</h3>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <img
+            src="assets/images/gallery/workshop1.jpg"
+            class="gallery-img"
+            alt="Workshop image 1"
+            title="Workshop image 1"
+          />
+        </div>
+        <div class="col-md-4">
+          <img
+            src="assets/images/gallery/workshop2.jpg"
+            class="gallery-img"
+            alt="Workshop image 2"
+            title="Workshop image 2"
+          />
+        </div>
+        <div class="col-md-4">
+          <img
+            src="assets/images/gallery/workshop3.jpg"
+            class="gallery-img"
+            alt="Workshop image 3"
+            title="Workshop image 3"
+          />
+        </div>
+      </div>
+
+      <!-- Events -->
+      <h3 class="gallery-title">Events</h3>
+      <div class="row g-4 mb-5">
+        <div class="col-md-4">
+          <img
+            src="assets/images/gallery/event1.jpg"
+            class="gallery-img"
+            alt="Event photo 1"
+            title="Event photo 1"
+          />
+        </div>
+        <div class="col-md-4">
+          <img
+            src="assets/images/gallery/event2.jpg"
+            class="gallery-img"
+            alt="Event photo 2"
+            title="Event photo 2"
+          />
+        </div>
+        <div class="col-md-4">
+          <img
+            src="assets/images/gallery/event3.jpg"
+            class="gallery-img"
+            alt="Event photo 3"
+            title="Event photo 3"
+          />
+        </div>
+      </div>
+    </div>
+
+    <footer>© 2026 Dr. Kamalesh Debnath | All Rights Reserved</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
+      const closeBtn = document.querySelector('.lightbox-close');
+
+      document.querySelectorAll('.gallery-img').forEach((img) => {
+        img.addEventListener('click', function () {
+          lightbox.style.display = 'block';
+          lightboxImg.src = this.src;
+        });
+      });
+
+      closeBtn.onclick = function () {
+        lightbox.style.display = 'none';
+      };
+
+      lightbox.onclick = function (e) {
+        if (e.target === lightbox) {
+          lightbox.style.display = 'none';
+        }
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/jpg" href="assets/images/favicon.png" />
+    <title>Dr. Kamalesh Debnath - Research Facility</title>
+
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- GOOGLE FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <style>
+      :root {
+        --primary-color: #0a4c97;
+      }
+      body {
+        font-family:
+          'Poppins',
+          system-ui,
+          -apple-system,
+          'Segoe UI',
+          Roboto,
+          'Helvetica Neue',
+          Arial;
+        color: #222;
+      }
+
+      .brand-home-icon {
+        font-size: 18px;
+        vertical-align: middle;
+        margin-right: 6px;
+      }
+
+      /* Page header banner */
+      .page-banner {
+        background: linear-gradient(90deg, rgba(10, 76, 151, 0.92), rgba(13, 110, 253, 0.92));
+        color: #fff;
+      }
+
+      /* Facility grid */
+      .facility-grid {
+        margin-top: 1.25rem;
+      }
+      .facility-card {
+        border-radius: 12px;
+        overflow: hidden;
+        transition:
+          transform 180ms ease,
+          box-shadow 180ms ease;
+      }
+      .facility-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 14px 30px rgba(10, 76, 151, 0.08);
+      }
+
+      .facility-thumb {
+        width: 100%;
+        height: 260px;
+        object-fit: contain;
+        background: #f2f4f7;
+        padding: 10px;
+      }
+
+      .instrument-title {
+        font-size: 1.02rem;
+        font-weight: 600;
+        color: var(--primary-color);
+      }
+
+      @media (max-width: 576px) {
+        .facility-thumb {
+          height: 140px;
+        }
+      }
+
+      footer {
+        padding: 28px 12px;
+        background: var(--primary-color);
+        color: #fff;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- NAVBAR (same structure as homepage) -->
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+      <div class="container">
+        <a class="fa-solid fa-house brand-home-icon navbar-brand" href="index.html"></a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+          aria-label="Toggle navigation"
+          title="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Toggle navigation</span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <!-- Primary links (kept visible) -->
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="index.html" aria-current="page">
+                <i class="fa-solid fa-home me-1" aria-hidden="true"></i>Home
+              </a>
+            </li> -->
+
+            <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+            <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
+            <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
+
+            <!-- More dropdown for less-critical links -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle d-flex align-items-center"
+                href="#"
+                id="moreDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                More <i class="fa-solid fa-angle-down ms-1"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="moreDropdown">
+                <li>
+                  <a class="dropdown-item" href="ptnt.html"
+                    ><i class="fa-solid fa-certificate me-2"></i>Patents</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="research-facility.html"
+                    ><i class="fa-solid fa-microscope me-2"></i>Research Facility</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="projects.html"
+                    ><i class="fa-solid fa-microscope me-2"></i>Projects</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="students.html"
+                    ><i class="fa-solid fa-user-friends me-2"></i>UG/PG Students</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="phd.html"
+                    ><i class="fa-solid fa-user-graduate me-2"></i>PhD Students</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="gallery.html"
+                    ><i class="fa-solid fa-image me-2"></i>Gallery</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="notes.html"
+                    ><i class="fa-solid fa-book-open me-2"></i>Course Notes</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <!-- Keep contact accessible -->
+            <li class="nav-item ms-lg-2">
+              <a class="nav-link" href="contact.html"><i aria-hidden="true"></i>Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- PAGE BANNER -->
+    <div class="page-banner text-center py-5" style="background: #063970; color: white">
+      <h1>Research Facility</h1>
+      <p class="mb-0">Major instruments, sample capabilities and brief descriptions</p>
+    </div>
+
+    <!-- Main content -->
+    <div class="container facility-grid">
+      <div class="row g-4">
+        <!-- Instrument card template:
+             Replace image src with real photos at assets/images/facility/<slug>.jpg
+         -->
+
+        <div class="col-12 col-md-6">
+          <article class="card facility-card h-100">
+            <img
+              src="assets/images/research facilities/elecwork.png"
+              alt="Electrochemical Workstation"
+              class="facility-thumb"
+              loading="lazy"
+            />
+            <div class="card-body">
+              <div class="instrument-title">Electrochemical Workstation (Potentiostat)</div>
+              <p class="mb-0">
+                Used to run electrochemical experiments by precisely controlling and measuring
+                voltage and current on electrodes — essential for battery, corrosion, and sensor
+                research.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <article class="card facility-card h-100">
+            <img
+              src="assets/images/research facilities/vacoven.jpg"
+              alt="Vacuum Oven"
+              class="facility-thumb"
+              loading="lazy"
+            />
+            <div class="card-body">
+              <div class="instrument-title">Vacuum Oven</div>
+              <p class="mb-0">
+                A controlled oven that operates under reduced pressure to gently remove solvents and
+                moisture at lower temperatures — useful for drying sensitive samples and solvent
+                removal.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <article class="card facility-card h-100">
+            <img
+              src="assets/images/research facilities/smi.png"
+              alt="Source Measurement Unit (SMU)"
+              class="facility-thumb"
+              loading="lazy"
+            />
+            <div class="card-body">
+              <div class="instrument-title">Source Measurement Unit (SMU)</div>
+              <p class="mb-0">
+                A precision electronic instrument that can source voltage or current and
+                simultaneously measure voltage/current — commonly used for I–V characterization of
+                devices and materials.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <article class="card facility-card h-100">
+            <img
+              src="assets/images/research facilities/centri.jpg"
+              alt="Centrifuge"
+              class="facility-thumb"
+              loading="lazy"
+            />
+            <div class="card-body">
+              <div class="instrument-title">Centrifuge</div>
+              <p class="mb-0">
+                Spins liquid samples at high speed to separate components by density — widely used
+                for sample clarification, cell pelleting and separating phases.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <article class="card facility-card h-100">
+            <img
+              src="assets/images/research facilities/sonic.jpg"
+              alt="Horn Ultrasonicator"
+              class="facility-thumb"
+              loading="lazy"
+            />
+            <div class="card-body">
+              <div class="instrument-title">Horn Ultrasonicator (Sonicator)</div>
+              <p class="mb-0">
+                Applies high-frequency ultrasonic waves (via a probe/horn) to mix, disperse or lyse
+                samples — commonly used for cell disruption, emulsification and nanoparticle
+                dispersion.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <article class="card facility-card h-100">
+            <img
+              src="assets/images/research facilities/wetlab.jpg"
+              alt="Wet Lab"
+              class="facility-thumb"
+              loading="lazy"
+            />
+            <div class="card-body">
+              <div class="instrument-title">Wet Lab (benches & basic utilities)</div>
+              <p class="mb-0">
+                A dedicated space with sinks, fume extraction, gas/electrical access and benches for
+                chemical and biological experiments — supports routine sample prep and small-scale
+                synthesis.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <article class="card facility-card h-100">
+            <img
+              src="assets/images/research facilities/semimic.jpg"
+              alt="Semi-microbalance"
+              class="facility-thumb"
+              loading="lazy"
+            />
+            <div class="card-body">
+              <div class="instrument-title">Semi-microbalance</div>
+              <p class="mb-0">
+                A precision balance for measuring very small masses (typically sub-milligram
+                readability) — important for formulation, reagent weighing and analytical work.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <article class="card facility-card h-100">
+            <img
+              src="assets/images/research facilities/muffle.jpg"
+              alt="Muffle Furnace"
+              class="facility-thumb"
+              loading="lazy"
+            />
+            <div class="card-body">
+              <div class="instrument-title">Muffle Furnace</div>
+              <p class="mb-0">
+                A high-temperature box furnace that isolates samples from combustion byproducts —
+                used for ashing, heat treatments, and materials testing up to very high
+                temperatures.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <article class="card facility-card h-100">
+            <img
+              src="assets/images/research facilities/reva.jpg"
+              alt="Rotary Vacuum Evaporator (Rotavap)"
+              class="facility-thumb"
+              loading="lazy"
+            />
+            <div class="card-body">
+              <div class="instrument-title">Rotary Vacuum Evaporator (Rotavap)</div>
+              <p class="mb-0">
+                Used to gently and efficiently remove solvents under reduced pressure while rotating
+                the sample flask — common in chemical synthesis and natural-product work for solvent
+                removal.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+      <!-- row -->
+    </div>
+    <!-- container -->
+
+    <div class="container text-center my-5">
+      <p class="text-muted small">
+        If any description above looks wrong or you'd like technical specs (model, manufacturer,
+        operating ranges), tell me which instrument and I will expand that card with details.
+      </p>
+    </div>
+
+    <footer>© 2026 Dr. Kamalesh Debnath | All Rights Reserved</footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
